@@ -82,6 +82,11 @@ end
   def over?
     draw? || won?
   end
+  
+  def winner
+    if won? 
+       WIN_COMBINATIONS.detect do |combo|
+    if (@board[combo[0]]) == "X" && (@board[combo[1]]) == "X" && (@board[combo[2]]) == "X"
  
   def display_board
     puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
