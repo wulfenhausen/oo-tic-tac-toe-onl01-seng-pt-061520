@@ -84,8 +84,17 @@ end
   end
   
   def winner
-    WIN_COMBINATIONS.detect 
-  end 
+     WIN_COMBINATIONS.detect do |combo|
+    if (@board[combo[0]]) == "X" && (@board[combo[1]]) == "X" && (@board[combo[2]]) == "X"
+      "x"
+      elsif (@board[combo[0]]) == "O" && (@board[combo[1]]) == "O" && (@board[combo[2]]) == "O"
+      "O"
+    end
+  end
+  end
+  
+  
+  
   def display_board
     puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
     puts "-----------"
