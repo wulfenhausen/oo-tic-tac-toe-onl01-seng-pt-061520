@@ -72,11 +72,8 @@ end
    
 
   def full?
-    if @board.size == 8
-      TRUE
-    else
-      false
-    end
+   @board.each do |array_argument| 
+     if array_argument == "X"
   end
  
  
