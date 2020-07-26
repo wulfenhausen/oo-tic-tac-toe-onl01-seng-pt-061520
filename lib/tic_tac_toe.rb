@@ -72,8 +72,8 @@ end
    
 
   def full?
-   @board.each do |array_argument| 
-     if array_argument == "X"
+   @board.any? { |x| x == " " }
+  
   end
  
  
