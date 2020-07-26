@@ -98,9 +98,10 @@ end
       turn
     end
     if won?
-      puts "Congratulations #{winner}!
-      "
-      
+      puts "Congratulations #{winner}!"
+    elsif draw?
+      print "Cat's Game!"
+    end
   end
   
   def display_board
