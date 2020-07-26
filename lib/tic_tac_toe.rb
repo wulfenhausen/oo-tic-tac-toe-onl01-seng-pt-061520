@@ -93,7 +93,7 @@ end
   end
   end
   
-  def self.play
+  def play
     until over?
       turn
     end
