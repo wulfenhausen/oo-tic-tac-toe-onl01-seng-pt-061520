@@ -78,7 +78,10 @@ end
   def draw?
     full? && !won?
   end
- 
+  
+  def over?
+    draw? || won?
+  end
  
   def display_board
     puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
