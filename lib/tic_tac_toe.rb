@@ -75,6 +75,9 @@ end
    !@board.any? { |x| x == " " }
   end
  
+  def draw?
+    full? && !won?
+  end
  
  
   def display_board
